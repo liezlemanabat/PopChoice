@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>PopChoice</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+      <script type="module" crossorigin src="/assets/index-lIKjWPER.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-ef-Ol644.css">
+    </head>
+    <body>
+        <header>
+            <img src='/assets/PopChoice-7r-vlthe.png' alt='image of a popcorn'>
+            <h1>PopChoice</h1>
+        </header>
+        <main>
+            <section id='homepage'>
+                <form id='movie-form'>
+                    <label>What’s your favorite movie and why?</label>
+                    <textarea 
+                        id='favorite-movie'
+                        placeholder='The Shawshank Redemption Because it taught me to never give up hope no matter how hard life gets'
+                        required
+                        ></textarea>
+            
+                    <label>Are you in the mood for something new or a classic?</label>
+                    <textarea
+                        id='movie-mood'
+                        placeholder='I want to watch movies that were released after 1990'
+                        required
+                        ></textarea>
+            
+                    <label>Do you wanna have fun or do you want something serious?</label>
+                    <textarea
+                        id='movie-preference'
+                        placeholder='I want to watch something stupid and fun' 
+                        required
+                        ></textarea>      
+                    
+                    <button>Let's Go!</button>     
+                </form>
+            </section>
+            
+            <section class="answer-container" id='answer-container'>
+                <div class="answer-page">
+                    <h2 id='movie-title'> <!-- title   --> </h2>
+                    <p id='released-year'> <!-- Release year --> </p>
+                    <p id='stars'><!-- stars here --></p>
+                    <p id='movie-reco'><!-- description --> </p>
+                    <button id='back-to-main'> Once again</button>
+                </div>
+            </section>
+            
+            <section>
+                <div class='loader-container' id="loader-container">
+                    <div class="loader">
+                        <span class="loader-text">thinking</span>
+                        <span class="load"></span>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            &#169; 2023 #PopChoice
+            <span>LM projects</span>
+        </footer>
+    </body>
+</html> 

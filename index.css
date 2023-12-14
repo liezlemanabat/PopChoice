@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    background: #000C36;
+}
+
+html, body {
+    margin: 0 auto;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* header */
+header {
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header > img {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    margin: 0;
+    font-family: Carter One;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* main content */
+main {
+    padding: .5em 0ex;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: .3em;
+}
+
+label {
+    margin-top: 10px;
+    letter-spacing: 0.025em;
+}
+
+textarea {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    width: 100%;
+    height: 70px;
+    font-size: 300;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background: #3B4877;
+    outline: none;
+    resize: none;
+    letter-spacing: 0.025em;
+}
+
+button {
+    margin: 1.5em 0;
+    font-family: inherit;
+    color: #000C36;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .5em;
+    border: none;
+    border-radius: 8px;
+    background: #06d6a0;
+    cursor: pointer;
+}
+
+/* answer page */
+.answer-container {
+    display: none;
+}
+
+.answer-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+
+.answer-page > h2, p {
+    margin: 0;
+}
+
+.answer-page > p {
+    margin-top: .5rem;
+    line-height: 1.5
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: .8rem;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+}
+
+span {
+    background: none;
+    margin: 0;
+}
+
+/* hide/show */
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Loader */
+
+#loader-container {
+    display: none;
+    margin: 0 auto;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #C8B6FF;
+  animation: text_713 3.5s ease both infinite;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
+  border-radius: 50px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(64px);
+  animation: loading_713 3.5s ease both infinite;
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease both infinite;
+}
+
+@keyframes text_713 {
+  0% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    letter-spacing: 2px;
+    transform: translateX(26px);
+  }
+
+  80% {
+    letter-spacing: 1px;
+    transform: translateX(32px);
+  }
+
+  90% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+  }
+
+  100% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading_713 {
+  0% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  80% {
+    width: 16px;
+    transform: translateX(64px);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading2_713 {
+  0% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+
+  40% {
+    transform: translateX(0%);
+    width: 80%;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  90% {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+}
+ 
